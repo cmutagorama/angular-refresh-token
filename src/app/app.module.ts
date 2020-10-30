@@ -12,13 +12,19 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http'
 import { appInitializer } from './_helpers/app.initializer';
+import { MainNavComponent } from './components/main-nav/main-nav.component';
+import { AdminNavComponent } from './components/admin-nav/admin-nav.component';
+import { ListItemComponent } from './components/list-item/list-item.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
     HomeComponent,
-    DashboardComponent
+    DashboardComponent,
+    MainNavComponent,
+    AdminNavComponent,
+    ListItemComponent,
   ],
   imports: [
     BrowserModule,

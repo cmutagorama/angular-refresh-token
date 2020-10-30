@@ -8,17 +8,17 @@ import { Routes, RouterModule } from '@angular/router';
 
 const routes: Routes = [
   {
-    path:'',
-    component:HomeComponent,
+    path: '',
+    component: HomeComponent
+  },
+  {
+    path: 'login',
+    component: LoginComponent
+  },
+  {
+    path: 'dashboard',
+    component: DashboardComponent,
     canActivate: [AuthGuard]
-  },
-  {
-    path:'login',
-    component:LoginComponent
-  },
-  {
-    path:'dashboard',
-    component:DashboardComponent
   },
   {
     path: '**',
